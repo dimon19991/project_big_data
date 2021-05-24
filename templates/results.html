@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap_new.min.css') }}">
+    <script src="{{ url_for('static', filename='js/jquery_new.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap_new.min.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap-multiselect.css') }}">
+    <script src="{{ url_for('static', filename='js/bootstrap-multiselect.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>results</title>
+</head>
+<body>
+<header class="menu">
+    <img class="menu__logo" src="../static/img/logo.png" alt="logo">
+    <nav class="menu__navigation">
+        <ul class="menu__navigation__link">
+            <li class="menu__link ">
+                <a href="/" class="menu__link__line">About</a>
+                <div class="menu__line"></div>
+            </li>
+            <li class="menu__link ">
+                <a href="/project" class="menu__link__line">Project</a>
+                <div class="menu__line"></div>
+            </li>
+            <li class="menu__link ">
+                <a href="/results" class="menu__link__line">Results</a>
+                <div class="menu__line"></div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+{% if flag == "1"%}
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Step ID</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for folder in folders %}
+        <tr>
+            <td> {{folder}}</td>
+            <td>
+                <button type="button" class="btn btn-views btn-primary" name="btn_detail_event"
+                        data-folder_data="{{folder}}">
+                    Подробнее
+                </button>
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% else %}
+<p>{{ title }}</p>
+<button type="button" name="btn_download" data-folder_data="{{folders}}">Download</button>
+<img src={{ name }} alt="Chart">
+{% endif %}
+<footer class="footer">
+    <p>&copy; 2021 KPI FPM </p>
+</footer>
+<script src="{{ url_for('static', filename='js/event.js') }}"></script>
+</body>
+</html>

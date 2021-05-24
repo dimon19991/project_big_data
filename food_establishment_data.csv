@@ -1,0 +1,15 @@
+name,inspection_result,inspection_closed_business,violation_type,violation_points
+100 LB CLAM,Incomplete,FALSE,,0
+100 LB CLAM,Unsatisfactory,FALSE,BLUE,5
+100 LB CLAM,Unsatisfactory,FALSE,RED,5
+100 LB CLAM,Unsatisfactory,FALSE,RED,10
+100 LB CLAM,Unsatisfactory,FALSE,RED,5
+100 LB CLAM,Complete,FALSE,,0
+100 LB CLAM,Complete,FALSE,,0
+100 PERCENT NUTRICION,Unsatisfactory,FALSE,BLUE,5
+100 PERCENT NUTRICION,Unsatisfactory,FALSE,BLUE,5
+100 PERCENT NUTRICION,Unsatisfactory,FALSE,RED,10
+100 PERCENT NUTRICION,Unsatisfactory,FALSE,RED,5
+1000 SPIRITS,Satisfactory,FALSE,,0
+1000 SPIRITS,Unsatisfactory,FALSE,RED,5
+1000 SPIRITS,Satisfactory,FALSE,BLUE,5
