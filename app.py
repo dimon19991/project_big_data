@@ -169,7 +169,7 @@ def results(step=None):
 
 @app.route("/download/<step>")
 def download(step):
-    ("downloaded_users_files/res.csv", "project-files-kpi", step)
+    s3_download("downloaded_users_files/res.csv", "project-files-kpi", step)
     return send_from_directory(directory="downloaded_users_files", path="res.csv")
 
 
