@@ -17,15 +17,15 @@
     <nav class="menu__navigation">
         <ul class="menu__navigation__link">
             <li class="menu__link ">
-                <a href="/" class="menu__link__line">About</a>
+                <a href="/" class="menu__link__lines">About</a>
                 <div class="menu__line"></div>
             </li>
             <li class="menu__link ">
-                <a href="/project" class="menu__link__line">Project</a>
+                <a href="/project" class="menu__link__lines">Project</a>
                 <div class="menu__line"></div>
             </li>
             <li class="menu__link ">
-                <a href="/results" class="menu__link__line">Results</a>
+                <a href="/results" class="menu__link__lines">Results</a>
                 <div class="menu__line"></div>
             </li>
         </ul>
@@ -56,9 +56,11 @@
     </table>
 </div>
 {% else %}
-<p>{{ title }}</p>
-<button type="button" name="btn_download" data-folder_data="{{folders}}">Download</button>
-<img src={{ name }} alt="Chart">
+<p class="section-title"><span class="section-title-body title-text">{{ title }}</span></p>
+<div class="form-results">
+<button type="button" class="button-dwl" name="btn_download" data-folder_data="{{folders}}">Download</button>
+<img class="form-images" src={{ name }} alt="Chart">
+</div>
 {% endif %}
 <footer class="footer">
     <p>&copy; 2021 KPI FPM </p>

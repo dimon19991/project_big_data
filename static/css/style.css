@@ -293,7 +293,7 @@ input[type="file"] {
 
 }
 
-input[type="submit"]:hover {
+input[type="button"]:hover {
     background-color: var(--color-main-light-alt);
     color: white;
     border-color: var(--color-main-light-alt);
@@ -337,4 +337,45 @@ input[type="button"] {
 .table-responsive{
     width: 900px;
     margin: 100px auto 100px;
+}
+.form-link{
+    text-decoration: none;
+    margin-bottom: 60px;
+    color: var(--color-main-light-alt)
+}
+.title-text{
+    font-size: 24px;
+}
+.form-results{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+    margin: 0 auto;
+}
+.form-images{
+    width: 690px;
+}
+.button-dwl[type="button"] {
+    background-color: white;
+    margin: 40px auto 0;
+    width: 200px;
+    height: 55px;
+    font-size: 24px;
+    color: var(--color-main-dark-alt);
+    border: 2px solid black;
+}
+.button-dwl[type="button"]:hover {
+    background-color: var(--color-main-light-alt);
+    color: white;
+    border-color: var(--color-main-light-alt);
+}
+
+.menu__link__lines {
+    color: var(--color-main-light-alt);
+    text-decoration: none;
+}
+
+.menu__lines:hover {
+    color: var(--color-main-light-alt);
 }
